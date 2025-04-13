@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    // Target modern JavaScript features
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    // Include necessary libraries for DOM and modern JS (Set, Map, Iterable, etc.)
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    // Skip type checking of declaration files in node_modules (speeds up build, avoids lib errors)
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    // Use modern module resolution strategy
+    "moduleResolution": "bundler",
+    // Allow importing .ts/.tsx - might not be needed if imports are extensionless
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    // Vite handles the build output, tsc only checks types
+    "noEmit": true,
+    // Enable modern React JSX transform
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Module Interop */
+    // Allow default imports from modules with no default export (like older @types/react)
+    "esModuleInterop": true,
+    // Often used with esModuleInterop
+    "allowSyntheticDefaultImports": true,
+
+    /* Path Aliases (Should match your previous setup) */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* Explicitly include types for Vite and Node */
+     "types": ["vite/client", "node"]
+  },
+  // Specify which files TypeScript should include
+  "include": ["src"],
+  // Reference for checking Node-specific config files (like vite.config.ts)
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

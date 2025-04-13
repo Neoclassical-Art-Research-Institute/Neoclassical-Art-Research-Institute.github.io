@@ -1,0 +1,22 @@
+// tsconfig.node.json
+{
+  "compilerOptions": {
+    // --- Add this line ---
+    "composite": true,
+
+    // --- Ensure "noEmit" is NOT true (or just remove the line if it exists) ---
+    // "noEmit": false, // Or simply delete this line
+
+    /* Recommended settings for Node/Vite config files */
+    "target": "ES2020", // Or a target suitable for your Node version
+    "module": "ESNext",
+    "moduleResolution": "bundler", // Or "NodeNext", "Node16"
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["node"] // Ensure Node types are available
+  },
+  // Tell this config which files it applies to
+  "include": ["vite.config.ts"] // Add other Node-specific config files if needed
+}
