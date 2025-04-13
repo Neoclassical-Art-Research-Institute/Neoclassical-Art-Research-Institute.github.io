@@ -34,7 +34,7 @@ export const CulturesPage = () => {
                             <span className="font-semibold block mb-1">Said, Edward W. (1978).</span>
                             <span className="italic">"Orientalism".</span>
                             <span className="block text-sm text-gray-600">Pantheon Books</span>
-                            <a href="#" className="text-nari-blue-primary hover:underline text-sm">[]</a>
+                            <a href="https://www.amazon.com/Orientalism-Edward-W-Said/dp/039474067X" className="text-nari-blue-primary hover:underline text-sm">[Purchase on Amazon]</a>
                         </li>
                         <li className="border-b border-gray-200 pb-4">
                             <span className="font-semibold block mb-1">Cho, A. (2017).</span>
